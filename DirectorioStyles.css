@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1,h3{
+    text-align: center;
+}
+#inicio{
+    width: 60%;
+    padding-top: 10vh;
+    margin: auto;
+    
+}
+
+.botones{
+    padding-top: 10vh;
+    text-align: center;
+}
+
+
+.agregarEmpleado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    
+    background: rgb(66, 172, 233);
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0px 7px 12px 7px #c5c4c4;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 30px;
+    gap: 5px;
+}
+
+.guardar{
+    padding-top: 20px;
+    display: grid;
+    place-items: center;
+}
+
+/*Sección eliminar*/
+.borrarEmpleado{
+    width: 300px;
+    height: 100px;
+    background: rgb(238, 178, 39);
+    color: beige;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    margin: auto;
+}
+#id-borrar{
+    width: 60px;
+}
+.hidden{
+    display: none;
+}

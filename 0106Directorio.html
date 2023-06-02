@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="DirectorioStyles.css">
+
+    <title>Directorio empresarial</title>
+</head>
+<body>
+  <div id="inicio" >
+    <h1>Directorio empresarial</h1> <br><br>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo Electrónico</th>
+            <th scope="col">Teléfono</th>
+          </tr>
+        </thead>
+        <tbody id="template-empleados">
+          <tr id="1">
+            <th scope="row">1</th>
+            <td>Juan Pérez</td>
+            <td>jp@gmail.com</td>
+            <td>3045125693</td>
+          </tr>
+          <tr id="2">
+            <th scope="row">2</th>
+            <td>Federico López</td>
+            <td>fede@hotmail.com</td>
+            <td>3216954781</td>
+          </tr>
+          <tr id="3">
+            <th scope="row">3</th>
+            <td>Mariana Álvarez</td>
+            <td>mari@gmail.com</td>
+            <td>3251478963</td>
+          </tr>
+        </tbody>
+      </table>
+    <div class="botones" id="botones">
+        <button class="btn btn-primary" id="agregar">Agregar</button>
+        <button class="btn btn-danger" id="eliminar">Eliminar</button>
+    </div>
+  </div>
+
+    <div id="nuevo-empleado" class="agregarEmpleado hidden">
+        <h3>Datos del empleado</h3>
+        <form id="empleado-form" class="formulario">
+            
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" required>
+        
+        
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo">
+        
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono">
+
+            <div class="guardar">
+              <button class="btn btn-success" type="submit" id="guardar">Guardar</button>
+            </div>  
+        </form>
+    </div>
+
+    <div id="eliminar-empleado" class="borrarEmpleado hidden">
+      <label for="id-borrar">ID a eliminar de la lista: </label>
+      <input type="number" id="id-borrar">
+
+      <button class="btn btn-danger" id="eliminar">Confirmar</button>
+
+    </div>
+    
+    <script src="0106Directorio.js"></script>
+</html>
