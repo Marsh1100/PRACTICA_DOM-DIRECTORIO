@@ -66,9 +66,10 @@ form.addEventListener('submit', function(e){
     contador +=1;
 
     //Inicializamos los placeholder
-    nombreCompleto.value='';
-    email.value='';
-    telefono.value='';
+    // nombreCompleto.value='';
+    // email.value='';
+    // telefono.value='';
+    form.reset()
     
     document.getElementById('nuevo-empleado').style.display='none';
     document.getElementById('inicio').style.filter='';
